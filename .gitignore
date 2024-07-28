@@ -1,22 +1,134 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
+# Golang specific
+bin/
+obj/
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.log
+*.db
+
+# Vendor directory
+vendor/
+
+# Dependency directories (remove the comment below if you use Go modules)
+# /vendor/
+
+# Golang binary
+main
+
+# Golang build and test files
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
-
-# Test binary, built with `go test -c`
 *.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
 *.out
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
+*.log
+*.db
 
 # Go workspace file
 go.work
-go.work.sum
+
+# IntelliJ IDEA
+.idea/
+
+# GoLand IDE
+.goland/
+
+# VSCode
+.vscode/
+
+# React specific
+node_modules/
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Production
+build/
+dist/
+
+# Misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Parcel-bundler cache (https://parceljs.org/)
+.cache/
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# Gatsby files
+.cache/
+public/
+
+# Sapper
+__sapper__/
+static/
+
+# Expo
+web-build/
+.expo/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Misc
+.DS_Store
+*.pem
+*.key
+*.crt
+
+# Environment variable files
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Parcel cache
+.cache
+
+# Next.js build output
+.next
+out
+
+# Build output
+build
+dist
+
+# Storybook files
+out
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# Local history for JetBrains
+.local-history/
