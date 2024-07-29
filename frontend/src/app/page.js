@@ -2,19 +2,20 @@
 
 import React, { useEffect, useState } from 'react';
 import MusicPlayer from "@/components/music-player";
+import Image from "next/image";
 
 export default function Home() {
   const [songs, setSongs] = useState([]);
   const [currentSong, setCurrentSong] = useState(null);
 
   useEffect(() => {
-    fetch('/api/songs')
+    fetch('http://localhost:8000/api/songs/')
       .then((response) => response.json())
       .then((data) => setSongs(data));
   }, []);
 
   const playSong = (song) => {
-    setCurrentSong(song.url);
+    setCurrentSong(song.file);
   };
 
   return (
@@ -23,9 +24,9 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {songs.map((song) => (
           <div key={song.id} className="bg-white p-4 rounded-lg shadow-md">
-            <img src={song.thumbnail} alt={song.name} className="w-full h-48 object-cover rounded-lg mb-4" />
-            <h2 className="text-2xl font-semibold mb-2">{song.name}</h2>
-            <p className="text-gray-600 mb-2">By {song.author}</p>
+            <Image width={400} height={400} src={song.thumbnail} alt={song.name} className="w-full h-48 object-cover rounded-lg mb-4" />
+            <h2 className="text-2xl font-semibold mb-2 text-black">{song.name}</h2>
+            <p className="text-gray-600 mb-2">By {song.artist}</p>
             <button onClick={() => playSong(song)} className="text-blue-500 hover:underline">
               Listen Now
             </button>
