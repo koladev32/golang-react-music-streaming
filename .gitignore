@@ -175,7 +175,6 @@ build/
 
 # Python environment files
 Pipfile.lock
-requirements.txt
 Pipfile
 
 # Coverage reports
@@ -197,4 +196,3 @@ instance/
 # Django
 *.log
 local_settings.py
-db.sqlite3
