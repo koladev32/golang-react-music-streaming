@@ -136,3 +136,65 @@ out
 songs/
 
 *.mp3
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+/.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Pytest
+.pytest_cache/
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Python environment files
+Pipfile.lock
+requirements.txt
+Pipfile
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# Database
+*.sqlite3
+*.db
+
+# Flask
+instance/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
