@@ -132,3 +132,7 @@ out
 
 # Local history for JetBrains
 .local-history/
+
+songs/
+
+*.mp3
