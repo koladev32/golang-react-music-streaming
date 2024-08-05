@@ -184,7 +184,6 @@ __pycache__
 
 # Logs
 *.log
-*.txt
 
 # Debugging files
 *.pdb

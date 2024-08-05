@@ -17,17 +17,14 @@ setup: setup-backend setup-frontend
 
 setup-backend:
 	@echo "Setting up backend..."
-	mkdir -p $(BACKEND_DIR)
 	cd $(BACKEND_DIR) && \
 	python3 -m venv venv \
 	&& source venv/bin/activate \
-	&& pip install django-cors-headers django djangorestframework pillow \
-	&& django-admin startproject backend . \
+	&& pip install -r requirements.txt \
 	&& python manage.py migrate
 
 setup-frontend:
 	@echo "Setting up frontend..."
-	mkdir -p $(FRONTEND_DIR)
 	cd $(FRONTEND_DIR) && npm install
 
 build: build-backend build-frontend
