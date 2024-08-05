@@ -132,3 +132,75 @@ out
 
 # Local history for JetBrains
 .local-history/
+
+
+
+*.pyc
+*~$
+*.pyo
+*.pyd
+*.so
+*.dll
+*.egg-info
+*.dist-info
+*.manifest
+*.mo
+*.po
+*.pot
+*.sgml
+*.texi
+*.vcs
+*.vsix
+*.wsgi
+*.whl
+*.zip
+
+# Python package manager (pip) files
+*.pth
+*.pyz
+*.tar.gz
+*.zip
+*.egg
+*.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+*.lzma
+*.xz
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Temporary and cache files
+__pycache__
+*.pypickle
+*~
+*.pyc$
+*.pyd$
+*.pyo$
+
+# Logs
+*.log
+*.txt
+
+# Debugging files
+*.pdb
+*.pyd
+*.pyc
+*.so
+*.dll
+
+# Python-specific directories
+__pycache__/
+.venv/
+env/
+venv/
+
+# Testing and debugging files
+test/
+testing/
+debug/
+dbg/
